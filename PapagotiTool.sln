@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PapagotiTool", "PapagotiTool\PapagotiTool.csproj", "{CBB1A845-737B-4121-A36F-CFB9AFBA85EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB1A845-737B-4121-A36F-CFB9AFBA85EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB1A845-737B-4121-A36F-CFB9AFBA85EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB1A845-737B-4121-A36F-CFB9AFBA85EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB1A845-737B-4121-A36F-CFB9AFBA85EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2B169DB-F392-4AE8-AC87-0C8619825675}
+	EndGlobalSection
+EndGlobal
