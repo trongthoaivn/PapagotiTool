@@ -102,7 +102,7 @@
             this.btnLogin.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btnLogin.HoverTextColor = System.Drawing.Color.White;
             this.btnLogin.IsDerivedStyle = true;
-            this.btnLogin.Location = new System.Drawing.Point(224, 799);
+            this.btnLogin.Location = new System.Drawing.Point(235, 773);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.btnLogin.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -168,7 +168,7 @@
             this.groupBox1.Controls.Add(this.txtAuthSecret);
             this.groupBox1.Controls.Add(this.metroSetLabel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(45, 85);
+            this.groupBox1.Location = new System.Drawing.Point(45, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(521, 206);
             this.groupBox1.TabIndex = 12;
@@ -189,9 +189,9 @@
             this.groupBox2.Controls.Add(this.txtDatabaseLocal);
             this.groupBox2.Controls.Add(this.metroSetLabel5);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(45, 309);
+            this.groupBox2.Location = new System.Drawing.Point(45, 318);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(521, 470);
+            this.groupBox2.Size = new System.Drawing.Size(521, 436);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Local database";
@@ -319,7 +319,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(614, 864);
+            this.ClientSize = new System.Drawing.Size(614, 838);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.metroSetLabel3);
