@@ -200,6 +200,7 @@
     <Compile Include="Model\Floor.cs" />
     <Compile Include="Model\FloorFb.cs" />
     <Compile Include="Model\LoginMachine.cs" />
+    <Compile Include="Model\ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ufrmFloorcs.cs">
