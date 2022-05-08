@@ -20,7 +20,7 @@ namespace PapagotiTool
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            System.Diagnostics.Process.Start(Properties.Settings.Default.fileName);
             Environment.Exit(0);
         }
     }

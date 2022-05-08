@@ -113,8 +113,8 @@ namespace PapagotiTool
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
             DataConfig.AppSetting setting = new AppSetting();
+            Properties.Settings.Default.fileName = System.Reflection.Assembly.GetEntryAssembly().Location;
             txtConnectionString.Text = setting.GetConnectionString("dbContext");
             txtDatabaseLocal.Text = Properties.Settings.Default.DatabaseName;
             txtServer.Text = Properties.Settings.Default.Server;

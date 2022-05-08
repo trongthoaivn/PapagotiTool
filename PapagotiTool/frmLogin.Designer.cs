@@ -37,17 +37,17 @@
             this.metroSetLabel3 = new MetroSet_UI.Controls.MetroSetLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtConnectionString = new System.Windows.Forms.TextBox();
+            this.metroSetLabel8 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.btnTestConnection = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.metroSetLabel7 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.metroSetLabel6 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.txtServer = new System.Windows.Forms.TextBox();
             this.metroSetLabel4 = new MetroSet_UI.Controls.MetroSetLabel();
             this.txtDatabaseLocal = new System.Windows.Forms.TextBox();
             this.metroSetLabel5 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.txtServer = new System.Windows.Forms.TextBox();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.metroSetLabel6 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.metroSetLabel7 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.btnTestConnection = new System.Windows.Forms.Button();
-            this.txtConnectionString = new System.Windows.Forms.TextBox();
-            this.metroSetLabel8 = new MetroSet_UI.Controls.MetroSetLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -167,7 +167,7 @@
             this.groupBox1.Controls.Add(this.metroSetLabel2);
             this.groupBox1.Controls.Add(this.txtAuthSecret);
             this.groupBox1.Controls.Add(this.metroSetLabel1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(45, 85);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(521, 206);
@@ -195,6 +195,88 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Local database";
+            // 
+            // txtConnectionString
+            // 
+            this.txtConnectionString.Location = new System.Drawing.Point(39, 369);
+            this.txtConnectionString.Name = "txtConnectionString";
+            this.txtConnectionString.Size = new System.Drawing.Size(448, 30);
+            this.txtConnectionString.TabIndex = 20;
+            // 
+            // metroSetLabel8
+            // 
+            this.metroSetLabel8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetLabel8.IsDerivedStyle = true;
+            this.metroSetLabel8.Location = new System.Drawing.Point(39, 332);
+            this.metroSetLabel8.Name = "metroSetLabel8";
+            this.metroSetLabel8.Size = new System.Drawing.Size(195, 24);
+            this.metroSetLabel8.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel8.StyleManager = null;
+            this.metroSetLabel8.TabIndex = 19;
+            this.metroSetLabel8.Text = "ConnectionString";
+            this.metroSetLabel8.ThemeAuthor = "Narwin";
+            this.metroSetLabel8.ThemeName = "MetroLite";
+            // 
+            // btnTestConnection
+            // 
+            this.btnTestConnection.ForeColor = System.Drawing.Color.Black;
+            this.btnTestConnection.Location = new System.Drawing.Point(314, 65);
+            this.btnTestConnection.Name = "btnTestConnection";
+            this.btnTestConnection.Size = new System.Drawing.Size(173, 38);
+            this.btnTestConnection.TabIndex = 18;
+            this.btnTestConnection.Text = "Test Connection";
+            this.btnTestConnection.UseVisualStyleBackColor = true;
+            this.btnTestConnection.Click += new System.EventHandler(this.btnTestConnection_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(39, 292);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(448, 30);
+            this.txtPassword.TabIndex = 16;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // metroSetLabel7
+            // 
+            this.metroSetLabel7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetLabel7.IsDerivedStyle = true;
+            this.metroSetLabel7.Location = new System.Drawing.Point(33, 255);
+            this.metroSetLabel7.Name = "metroSetLabel7";
+            this.metroSetLabel7.Size = new System.Drawing.Size(195, 24);
+            this.metroSetLabel7.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel7.StyleManager = null;
+            this.metroSetLabel7.TabIndex = 15;
+            this.metroSetLabel7.Text = "Password";
+            this.metroSetLabel7.ThemeAuthor = "Narwin";
+            this.metroSetLabel7.ThemeName = "MetroLite";
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(39, 218);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(448, 30);
+            this.txtUserName.TabIndex = 14;
+            // 
+            // metroSetLabel6
+            // 
+            this.metroSetLabel6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetLabel6.IsDerivedStyle = true;
+            this.metroSetLabel6.Location = new System.Drawing.Point(33, 181);
+            this.metroSetLabel6.Name = "metroSetLabel6";
+            this.metroSetLabel6.Size = new System.Drawing.Size(195, 24);
+            this.metroSetLabel6.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel6.StyleManager = null;
+            this.metroSetLabel6.TabIndex = 13;
+            this.metroSetLabel6.Text = "User Name";
+            this.metroSetLabel6.ThemeAuthor = "Narwin";
+            this.metroSetLabel6.ThemeName = "MetroLite";
+            // 
+            // txtServer
+            // 
+            this.txtServer.Location = new System.Drawing.Point(39, 66);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(258, 30);
+            this.txtServer.TabIndex = 12;
             // 
             // metroSetLabel4
             // 
@@ -230,88 +312,6 @@
             this.metroSetLabel5.Text = "Database Name";
             this.metroSetLabel5.ThemeAuthor = "Narwin";
             this.metroSetLabel5.ThemeName = "MetroLite";
-            // 
-            // txtServer
-            // 
-            this.txtServer.Location = new System.Drawing.Point(39, 66);
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(258, 30);
-            this.txtServer.TabIndex = 12;
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(39, 218);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(448, 30);
-            this.txtUserName.TabIndex = 14;
-            // 
-            // metroSetLabel6
-            // 
-            this.metroSetLabel6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetLabel6.IsDerivedStyle = true;
-            this.metroSetLabel6.Location = new System.Drawing.Point(33, 181);
-            this.metroSetLabel6.Name = "metroSetLabel6";
-            this.metroSetLabel6.Size = new System.Drawing.Size(195, 24);
-            this.metroSetLabel6.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel6.StyleManager = null;
-            this.metroSetLabel6.TabIndex = 13;
-            this.metroSetLabel6.Text = "User Name";
-            this.metroSetLabel6.ThemeAuthor = "Narwin";
-            this.metroSetLabel6.ThemeName = "MetroLite";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(39, 292);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(448, 30);
-            this.txtPassword.TabIndex = 16;
-            this.txtPassword.UseSystemPasswordChar = true;
-            // 
-            // metroSetLabel7
-            // 
-            this.metroSetLabel7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetLabel7.IsDerivedStyle = true;
-            this.metroSetLabel7.Location = new System.Drawing.Point(33, 255);
-            this.metroSetLabel7.Name = "metroSetLabel7";
-            this.metroSetLabel7.Size = new System.Drawing.Size(195, 24);
-            this.metroSetLabel7.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel7.StyleManager = null;
-            this.metroSetLabel7.TabIndex = 15;
-            this.metroSetLabel7.Text = "Password";
-            this.metroSetLabel7.ThemeAuthor = "Narwin";
-            this.metroSetLabel7.ThemeName = "MetroLite";
-            // 
-            // btnTestConnection
-            // 
-            this.btnTestConnection.ForeColor = System.Drawing.Color.Black;
-            this.btnTestConnection.Location = new System.Drawing.Point(314, 65);
-            this.btnTestConnection.Name = "btnTestConnection";
-            this.btnTestConnection.Size = new System.Drawing.Size(173, 38);
-            this.btnTestConnection.TabIndex = 18;
-            this.btnTestConnection.Text = "Test Connection";
-            this.btnTestConnection.UseVisualStyleBackColor = true;
-            this.btnTestConnection.Click += new System.EventHandler(this.btnTestConnection_Click);
-            // 
-            // txtConnectionString
-            // 
-            this.txtConnectionString.Location = new System.Drawing.Point(39, 369);
-            this.txtConnectionString.Name = "txtConnectionString";
-            this.txtConnectionString.Size = new System.Drawing.Size(448, 30);
-            this.txtConnectionString.TabIndex = 20;
-            // 
-            // metroSetLabel8
-            // 
-            this.metroSetLabel8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetLabel8.IsDerivedStyle = true;
-            this.metroSetLabel8.Location = new System.Drawing.Point(39, 332);
-            this.metroSetLabel8.Name = "metroSetLabel8";
-            this.metroSetLabel8.Size = new System.Drawing.Size(195, 24);
-            this.metroSetLabel8.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel8.StyleManager = null;
-            this.metroSetLabel8.TabIndex = 19;
-            this.metroSetLabel8.Text = "ConnectionString";
-            this.metroSetLabel8.ThemeAuthor = "Narwin";
-            this.metroSetLabel8.ThemeName = "MetroLite";
             // 
             // frmLogin
             // 

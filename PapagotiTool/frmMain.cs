@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -119,7 +120,7 @@ namespace PapagotiTool
 
         private void firebaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // System.Windows.Forms.Application.;
+            Process.Start("https://firebase.google.com/");
         }
     }
 }

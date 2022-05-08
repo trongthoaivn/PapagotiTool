@@ -1,0 +1,327 @@
+[0508/142516.595:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142516.595:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142516.595:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142516.845:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142516.846:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142516.847:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142516.847:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142516.854:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142516.904:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142516.906:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142516.908:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142516.908:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142518.004:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/142519.186:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142519.245:INFO:CONSOLE(969)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://firebase.google.com').", source: https://www.youtube.com/s/player/a4d8b401/www-widgetapi.vflset/www-widgetapi.js (969)
+[0508/142519.478:INFO:CONSOLE(969)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://firebase.google.com').", source: https://www.youtube.com/s/player/a4d8b401/www-widgetapi.vflset/www-widgetapi.js (969)
+[0508/142519.632:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142519.640:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142519.642:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142519.643:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142521.562:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142521.562:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142521.562:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142530.768:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 5
+[0508/142534.050:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869205 [4,21] will be ignored
+[0508/142534.057:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/142534.062:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 71
+[0508/142534.068:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 73
+[0508/142750.762:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142750.763:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142750.763:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142751.499:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142751.500:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142751.500:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142751.501:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142751.513:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/142751.820:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142751.824:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142751.824:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142751.824:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/142752.418:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/142753.455:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142753.556:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142753.558:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142753.558:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142753.559:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142755.007:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142755.007:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142755.007:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142756.727:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 9
+[0508/142757.270:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142757.741:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142757.741:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142757.742:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142757.742:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142813.379:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869206 [4,22] will be ignored
+[0508/142813.388:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/142934.738:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142934.738:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142934.738:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/142935.237:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/142935.242:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/142935.243:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/142935.245:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/142935.289:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/142935.301:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/142935.319:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/142935.322:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/142935.326:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/142935.746:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/142936.299:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142936.318:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142936.327:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142936.328:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142936.351:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/142938.653:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142938.653:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142938.653:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/142939.530:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 9
+[0508/142949.047:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142949.506:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142949.507:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142949.508:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/142949.508:WARNING:browser_info.cc(298)] Returning a speculative frame for 30064771077 [7,5]
+[0508/143009.179:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143009.438:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143009.440:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143009.441:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143009.442:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143013.422:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869212 [4,28] will be ignored
+[0508/143013.424:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/143017.409:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 47244640263 [11,7] will be ignored
+[0508/143017.409:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 47244640263 [11,7] will be ignored
+[0508/143017.410:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 47244640263 [11,7] will be ignored
+[0508/143017.907:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143018.333:WARNING:browser_info.cc(298)] Returning a speculative frame for 55834574857 [13,9]
+[0508/143018.333:WARNING:browser_info.cc(298)] Returning a speculative frame for 55834574857 [13,9]
+[0508/143018.334:WARNING:browser_info.cc(298)] Returning a speculative frame for 55834574857 [13,9]
+[0508/143018.335:WARNING:browser_info.cc(298)] Returning a speculative frame for 55834574857 [13,9]
+[0508/143018.375:WARNING:browser_info.cc(298)] Returning a speculative frame for 55834574857 [13,9]
+[0508/143018.839:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607563 [12,11]
+[0508/143018.839:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607563 [12,11]
+[0508/143018.843:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607563 [12,11]
+[0508/143018.843:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607563 [12,11]
+[0508/143018.843:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607563 [12,11]
+[0508/143018.963:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 55834574859 [13,11] will be ignored
+[0508/143018.964:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 55834574859 [13,11] will be ignored
+[0508/143018.964:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 55834574859 [13,11] will be ignored
+[0508/143019.056:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607565 [12,13]
+[0508/143019.056:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607565 [12,13]
+[0508/143019.057:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607565 [12,13]
+[0508/143019.057:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607565 [12,13]
+[0508/143029.612:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 47244640257 [11,1] will be ignored
+[0508/143029.624:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 55834574857 [13,9] will be ignored
+[0508/143040.837:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143040.837:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143040.837:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143041.394:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143041.398:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143041.440:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143041.457:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143041.473:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143041.494:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143041.505:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143041.508:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143041.510:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143041.763:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143042.361:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143042.443:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143042.444:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143042.444:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143042.444:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143042.655:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 181
+[0508/143042.671:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 183
+[0508/143042.705:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/143045.820:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 30064771079 [7,7] will be ignored
+[0508/143045.820:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 30064771079 [7,7] will be ignored
+[0508/143045.820:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 30064771079 [7,7] will be ignored
+[0508/143046.242:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738376 [8,8]
+[0508/143046.242:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738376 [8,8]
+[0508/143046.243:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738376 [8,8]
+[0508/143046.243:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738376 [8,8]
+[0508/143046.254:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738376 [8,8]
+[0508/143046.272:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738378 [8,10]
+[0508/143046.273:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738378 [8,10]
+[0508/143046.279:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738378 [8,10]
+[0508/143046.281:WARNING:browser_info.cc(298)] Returning a speculative frame for 34359738378 [8,10]
+[0508/143046.514:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143046.727:WARNING:browser_info.cc(298)] Returning a speculative frame for 38654705673 [9,9]
+[0508/143046.742:WARNING:browser_info.cc(298)] Returning a speculative frame for 38654705673 [9,9]
+[0508/143046.745:WARNING:browser_info.cc(298)] Returning a speculative frame for 38654705673 [9,9]
+[0508/143046.753:WARNING:browser_info.cc(298)] Returning a speculative frame for 38654705673 [9,9]
+[0508/143046.848:WARNING:browser_info.cc(298)] Returning a speculative frame for 38654705673 [9,9]
+[0508/143048.208:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 38654705675 [9,11] will be ignored
+[0508/143048.208:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 38654705675 [9,11] will be ignored
+[0508/143048.208:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 38654705675 [9,11] will be ignored
+[0508/143101.652:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 3
+[0508/143102.079:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143102.166:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143102.166:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143102.166:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143102.166:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672965 [10,5]
+[0508/143123.323:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 11
+[0508/143123.330:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 13
+[0508/143124.733:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 30064771093 [7,21] will be ignored
+[0508/143617.100:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143617.100:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143617.100:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143617.450:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143617.451:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143617.451:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143617.451:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143617.462:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143617.506:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143617.526:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143617.527:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143617.527:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143618.146:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143618.926:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143618.977:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143618.978:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143618.978:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143618.978:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143620.440:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 17
+[0508/143620.456:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/143620.497:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803785 [6,9] will be ignored
+[0508/143734.270:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143734.270:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143734.270:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143734.934:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143735.245:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143735.251:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143735.258:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143735.260:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143735.282:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143735.292:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143735.316:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143735.321:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836490 [5,10]
+[0508/143735.321:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836488 [5,8]
+[0508/143735.747:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143735.752:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143735.767:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143735.792:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143735.951:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143736.006:INFO:CONSOLE(969)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://firebase.google.com').", source: https://www.youtube.com/s/player/a4d8b401/www-widgetapi.vflset/www-widgetapi.js (969)
+[0508/143737.725:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/143737.725:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 25769803787 [6,11] will be ignored
+[0508/143737.725:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/143738.776:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 7
+[0508/143738.795:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 179
+[0508/143738.806:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 181
+[0508/143738.830:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/143738.838:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803785 [6,9] will be ignored
+[0508/143849.167:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143849.167:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143849.167:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/143849.416:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143849.417:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143849.418:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143849.418:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143849.422:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143849.424:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143849.429:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143849.430:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/143849.432:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/143850.390:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/143851.107:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143851.349:INFO:CONSOLE(969)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('https://firebase.google.com').", source: https://www.youtube.com/s/player/a4d8b401/www-widgetapi.vflset/www-widgetapi.js (969)
+[0508/143851.382:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143851.388:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143851.391:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143851.391:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/143853.677:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 15
+[0508/143853.685:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 17
+[0508/143853.690:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803785 [6,9] will be ignored
+[0508/143853.698:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/144022.742:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/144022.742:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 17179869191 [4,7] will be ignored
+[0508/144022.742:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869191 [4,7] will be ignored
+[0508/144023.060:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/144023.062:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/144023.063:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/144023.064:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/144023.077:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836487 [5,7]
+[0508/144023.092:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/144023.092:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/144023.093:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/144023.095:WARNING:browser_info.cc(298)] Returning a speculative frame for 21474836489 [5,9]
+[0508/144023.872:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/144024.539:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/144024.651:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/144024.652:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/144024.652:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/144024.652:WARNING:browser_info.cc(298)] Returning a speculative frame for 25769803785 [6,9]
+[0508/144025.652:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/144025.652:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 25769803787 [6,11] will be ignored
+[0508/144025.652:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803787 [6,11] will be ignored
+[0508/144028.227:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 23
+[0508/144028.278:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 31
+[0508/144028.287:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 33
+[0508/144028.314:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 17179869185 [4,1] will be ignored
+[0508/144028.354:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 25769803785 [6,9] will be ignored
+[0508/144032.518:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 38654705671 [9,7] will be ignored
+[0508/144032.518:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 38654705671 [9,7] will be ignored
+[0508/144032.518:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 38654705671 [9,7] will be ignored
+[0508/144032.879:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672968 [10,8]
+[0508/144032.885:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672968 [10,8]
+[0508/144032.886:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672968 [10,8]
+[0508/144032.887:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672968 [10,8]
+[0508/144033.069:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672968 [10,8]
+[0508/144033.214:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/144033.509:WARNING:browser_info.cc(298)] Returning a speculative frame for 47244640265 [11,9]
+[0508/144033.509:WARNING:browser_info.cc(298)] Returning a speculative frame for 47244640265 [11,9]
+[0508/144033.510:WARNING:browser_info.cc(298)] Returning a speculative frame for 47244640265 [11,9]
+[0508/144033.510:WARNING:browser_info.cc(298)] Returning a speculative frame for 47244640265 [11,9]
+[0508/144033.549:WARNING:browser_info.cc(298)] Returning a speculative frame for 47244640265 [11,9]
+[0508/144033.679:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672972 [10,12]
+[0508/144033.679:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672972 [10,12]
+[0508/144033.679:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672972 [10,12]
+[0508/144033.680:WARNING:browser_info.cc(298)] Returning a speculative frame for 42949672972 [10,12]
+[0508/144034.700:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 47244640267 [11,11] will be ignored
+[0508/144034.700:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 47244640267 [11,11] will be ignored
+[0508/144034.700:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 47244640267 [11,11] will be ignored
+[0508/144036.403:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 7
+[0508/144036.928:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607557 [12,5]
+[0508/144036.928:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607557 [12,5]
+[0508/144036.929:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607557 [12,5]
+[0508/144036.929:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607557 [12,5]
+[0508/144036.944:WARNING:browser_info.cc(298)] Returning a speculative frame for 51539607557 [12,5]
+[0508/144046.105:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 38654705685 [9,21] will be ignored
+[0508/144220.672:ERROR:gpu_init.cc(481)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0508/144507.014:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 60129542152 [14,8] will be ignored
+[0508/144507.014:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 60129542152 [14,8] will be ignored
+[0508/144507.014:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 60129542152 [14,8] will be ignored
+[0508/144507.605:INFO:CONSOLE(819)] "Invalid structured keyword detected, type:<value> is disallowed as type is already a document property.", source: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/firebase/js/devsite_app_custom_elements_module.js (819)
+[0508/144507.789:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509449 [15,9]
+[0508/144507.790:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509449 [15,9]
+[0508/144507.790:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509449 [15,9]
+[0508/144507.790:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509449 [15,9]
+[0508/144507.795:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509449 [15,9]
+[0508/144507.860:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509451 [15,11]
+[0508/144507.860:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509451 [15,11]
+[0508/144507.861:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509451 [15,11]
+[0508/144507.861:WARNING:browser_info.cc(298)] Returning a speculative frame for 64424509451 [15,11]
+[0508/144508.344:WARNING:browser_info.cc(298)] Returning a speculative frame for 68719476745 [16,9]
+[0508/144508.444:WARNING:browser_info.cc(298)] Returning a speculative frame for 68719476745 [16,9]
+[0508/144508.444:WARNING:browser_info.cc(298)] Returning a speculative frame for 68719476745 [16,9]
+[0508/144508.445:WARNING:browser_info.cc(298)] Returning a speculative frame for 68719476745 [16,9]
+[0508/144508.445:WARNING:browser_info.cc(298)] Returning a speculative frame for 68719476745 [16,9]
+[0508/144509.046:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 68719476747 [16,11] will be ignored
+[0508/144509.046:WARNING:frame_impl.cc(431)] OnDidFinishLoad sent to detached frame 68719476747 [16,11] will be ignored
+[0508/144509.046:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 68719476747 [16,11] will be ignored
+[0508/144509.428:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 3
+[0508/144509.492:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 60129542145 [14,1] will be ignored
+[0508/144509.981:WARNING:browser_info.cc(298)] Returning a speculative frame for 77309411333 [18,5]
+[0508/144510.079:WARNING:browser_info.cc(298)] Returning a speculative frame for 77309411333 [18,5]
+[0508/144510.079:WARNING:browser_info.cc(298)] Returning a speculative frame for 77309411333 [18,5]
+[0508/144510.079:WARNING:browser_info.cc(298)] Returning a speculative frame for 77309411333 [18,5]
+[0508/144510.080:WARNING:browser_info.cc(298)] Returning a speculative frame for 77309411333 [18,5]
+[0508/144538.268:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 3
+[0508/144538.268:WARNING:spdy_session.cc(3541)] Received HEADERS for invalid stream 5
+[0508/144540.122:WARNING:browser_info.cc(298)] Returning a speculative frame for 85899345925 [20,5]
+[0508/144540.184:WARNING:browser_info.cc(298)] Returning a speculative frame for 85899345925 [20,5]
+[0508/144540.185:WARNING:browser_info.cc(298)] Returning a speculative frame for 85899345925 [20,5]
+[0508/144540.185:WARNING:browser_info.cc(298)] Returning a speculative frame for 85899345925 [20,5]
+[0508/144540.185:WARNING:browser_info.cc(298)] Returning a speculative frame for 85899345925 [20,5]
+[0508/144544.862:WARNING:frame_impl.cc(431)] SendProcessMessage sent to detached frame 73014444043 [17,11] will be ignored
