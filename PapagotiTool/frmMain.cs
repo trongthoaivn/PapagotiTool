@@ -24,7 +24,7 @@ namespace PapagotiTool
         {
             InitializeComponent();
             
-
+            //Lấy dữ liệu đăng nhập Firebase tạo config để đăng nhập
             IFirebaseConfig config = new FirebaseConfig
             {
                 AuthSecret = Auth,
@@ -33,7 +33,7 @@ namespace PapagotiTool
             this.config = config;
             txtCount.Text = "0";
 
-            //Test
+            //Tạo client để update dữ liệu
             this.client = new FirebaseClient(config);
             this.thread = new Thread(() => updateValueFirebase());
             thread.Start();
@@ -47,12 +47,17 @@ namespace PapagotiTool
         //Test
         private IFirebaseClient client;
         private Random random = new Random();
+        
+        
         //Test
+        //Tạo dữ liệu random
         public double GetRandomNumber(double minimum, double maximum)
         {
             return Math.Round(( random.NextDouble() * (maximum - minimum) + minimum),3);
         }
         //Test
+        //Update dữ liệu Firebase 3s/lần
+        //Tạo dữ liệu mô phỏng
         private async void updateValueFirebase()
         {
             while (active)
@@ -72,18 +77,18 @@ namespace PapagotiTool
             }
 
         }
-
+        //incomplete
+        // Kiểm tra internet
         public static bool CheckForInternetConnection()
         {
             return true;
         }
-
+        //Thoát ứng dụng và đóng tiến trình
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
             Environment.Exit(0);
         }
-
+        //Thêm 1 block Floor vào main panel
         private void btnAddFloor_Click(object sender, EventArgs e)
         {
             if (CheckForInternetConnection())
@@ -100,11 +105,21 @@ namespace PapagotiTool
             }
 
         }
-
+        //Thoát ứng dụng  và đóng tiến trình
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
             Environment.Exit(0);
+        }
+
+        private void localDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLocalDatabase  database = new frmLocalDatabase();
+            database.ShowDialog();
+        }
+
+        private void firebaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // System.Windows.Forms.Application.;
         }
     }
 }

@@ -49,6 +49,19 @@ namespace PapagotiTool
             }
         }
 
+        private void setValueUi(Model.FloorFb floor)
+        {
+            Invoke(new Action(() =>
+            {
+                Console.WriteLine("+1");
+                ggCurrent.Value = (double)floor.Current;
+                ggEnergy.Value = (double)floor.Energy;
+                ggFrequency.Value = (double)floor.Frequency;
+                ggHumidity.Value = (double)floor.Humidity;
+                ggPower.Value = (double)floor.Power;
+                ggVoltage.Value = (double)floor.Voltage;
+            }));
+        }
 
         private async Task requestDataFirebaseAsync()
         {
@@ -62,23 +75,12 @@ namespace PapagotiTool
                     Model.FloorFb floor = response.ResultAs<Model.FloorFb>();
                     if (floor != null)
                     {
-                        Invoke(new Action(() =>
-                        {
-                            Console.WriteLine("+1");
-                            ggCurrent.Value = (double)floor.Current;
-                            ggEnergy.Value = (double)floor.Energy;
-                            ggFrequency.Value = (double)floor.Frequency;
-                            ggHumidity.Value = (double)floor.Humidity;
-                            ggPower.Value = (double)floor.Power;
-                            ggVoltage.Value = (double)floor.Voltage;
-                        }));
+                        setValueUi(floor);
                     }
-                    
-
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Floor error " + ex.Message);
+                    MessageBox.Show("Floor error :" + ex.Message);
                 }
 
             }

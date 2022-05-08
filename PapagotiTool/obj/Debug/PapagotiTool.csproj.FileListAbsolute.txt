@@ -86,3 +86,4 @@ C:\Users\trong\Desktop\PapagotiTool\PapagotiTool\bin\Debug\System.Buffers.xml
 C:\Users\trong\Desktop\PapagotiTool\PapagotiTool\bin\Debug\System.Memory.xml
 C:\Users\trong\Desktop\PapagotiTool\PapagotiTool\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\trong\Desktop\PapagotiTool\PapagotiTool\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\trong\Desktop\PapagotiTool\PapagotiTool\obj\Debug\PapagotiTool.frmLocalDatabase.resources

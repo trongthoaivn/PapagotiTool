@@ -138,7 +138,7 @@
             this.txtTime.Margin = new System.Windows.Forms.Padding(4);
             this.txtTime.Name = "txtTime";
             this.txtTime.ReadOnly = true;
-            this.txtTime.Size = new System.Drawing.Size(138, 23);
+            this.txtTime.Size = new System.Drawing.Size(145, 23);
             this.txtTime.TabIndex = 13;
             // 
             // label7

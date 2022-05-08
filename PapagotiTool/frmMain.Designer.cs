@@ -88,9 +88,9 @@
             this.metroSetPanel1.Controls.Add(this.txtCount);
             this.metroSetPanel1.Controls.Add(this.label1);
             this.metroSetPanel1.IsDerivedStyle = true;
-            this.metroSetPanel1.Location = new System.Drawing.Point(15, 97);
+            this.metroSetPanel1.Location = new System.Drawing.Point(15, 104);
             this.metroSetPanel1.Name = "metroSetPanel1";
-            this.metroSetPanel1.Size = new System.Drawing.Size(1336, 656);
+            this.metroSetPanel1.Size = new System.Drawing.Size(1336, 649);
             this.metroSetPanel1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetPanel1.StyleManager = null;
             this.metroSetPanel1.TabIndex = 1;
@@ -110,7 +110,7 @@
             this.lvFloors.ForeColor = System.Drawing.Color.Black;
             this.lvFloors.Location = new System.Drawing.Point(18, 57);
             this.lvFloors.Name = "lvFloors";
-            this.lvFloors.Size = new System.Drawing.Size(1305, 579);
+            this.lvFloors.Size = new System.Drawing.Size(1305, 572);
             this.lvFloors.TabIndex = 7;
             // 
             // btnAddFloor
@@ -207,25 +207,27 @@
             // firebaseToolStripMenuItem
             // 
             this.firebaseToolStripMenuItem.Name = "firebaseToolStripMenuItem";
-            this.firebaseToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
+            this.firebaseToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.firebaseToolStripMenuItem.Text = "Firebase";
+            this.firebaseToolStripMenuItem.Click += new System.EventHandler(this.firebaseToolStripMenuItem_Click);
             // 
             // localDatabaseToolStripMenuItem
             // 
             this.localDatabaseToolStripMenuItem.Name = "localDatabaseToolStripMenuItem";
-            this.localDatabaseToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
+            this.localDatabaseToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.localDatabaseToolStripMenuItem.Text = "Local Database";
+            this.localDatabaseToolStripMenuItem.Click += new System.EventHandler(this.localDatabaseToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.reportToolStripMenuItem.Text = "Report";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 

@@ -22,10 +22,10 @@ namespace PapagotiTool
             this.nameFloor = nameFloor;
             this.config = config;
             this.panel = panel;
-        
-
+            this.timeWriteRecord = timeRefresh / 1000 * 3; //thời gian ghi dữ liệu 9s
+            //nhận config từ frmMain request dữ liệu từ Firebase
             _=requestDataFirebaseAsync();
-
+            //Tiến trình request dữ liệu Firebase 
             this.thread = new Thread(() => theardRequest());
             this.thread.Start();
            
@@ -37,34 +37,62 @@ namespace PapagotiTool
         private Thread thread;
         private bool active = true;
         private int countTimeToWriteSQL = 0;
+        private int timeRefresh = 3000; // thời gian refesh dữ liệu giây*1000
+        private int timeWriteRecord = 0;
         private Model.dbContext dbContext = new Model.dbContext();
 
         private void theardRequest()
         {
             while (active)
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(timeRefresh);
                _ = requestDataFirebaseAsync();
 
-                if(countTimeToWriteSQL == 10)
+                if(countTimeToWriteSQL == timeWriteRecord)
                 {
-                        Model.Floor  record = new Model.Floor();
-                        record.FloorName = nameFloor;
-                        record.Current = Double.Parse(txtCurrent.Text);
-                        record.Power = Double.Parse(txtPower.Text);
-                        record.Frequency = Double.Parse(txtFrequency.Text);
-                        record.Humidity = Double.Parse(txtHumidity.Text);
-                        record.Energy = Double.Parse(txtEnergy.Text);
-                        record.Voltage = Double.Parse(txtVoltage.Text);
-                        record.Time = DateTime.Parse(txtTime.Text);
-                        dbContext.Floors.Add(record);
-                        dbContext.SaveChanges();
-                        countTimeToWriteSQL=0;
+                    addNewRecord();  
+                    countTimeToWriteSQL=0;
                 }
                countTimeToWriteSQL++;
             }
         }
 
+        //tạo dữ liệu mới 
+        private void addNewRecord()
+        {
+            try
+            {
+                Model.Floor record = new Model.Floor();
+                record.FloorName = nameFloor;
+                record.Current = Double.Parse(txtCurrent.Text);
+                record.Power = Double.Parse(txtPower.Text);
+                record.Frequency = Double.Parse(txtFrequency.Text);
+                record.Humidity = Double.Parse(txtHumidity.Text);
+                record.Energy = Double.Parse(txtEnergy.Text);
+                record.Voltage = Double.Parse(txtVoltage.Text);
+                record.Time = DateTime.Parse(txtTime.Text);
+                dbContext.Floors.Add(record);
+                dbContext.SaveChanges();
+            }
+            catch (Exception ex)
+            { Console.WriteLine(ex.ToString()); }
+        }
+        // ghi dữ liệu vào Ui
+        private void setValueUi(Model.FloorFb floor)
+        {
+            Invoke(new Action(() =>
+            {
+               
+                gbFloor.Text = "[ " + nameFloor + " ]";
+                txtCurrent.Text = floor.Current.ToString();
+                txtEnergy.Text = floor.Energy.ToString();
+                txtFrequency.Text = floor.Frequency.ToString();
+                txtHumidity.Text = floor.Humidity.ToString();
+                txtPower.Text = floor.Power.ToString();
+                txtVoltage.Text = floor.Voltage.ToString();
+                txtTime.Text = floor.Time.ToString();
+            }));
+        }
         
 
         private async Task requestDataFirebaseAsync()
@@ -75,22 +103,12 @@ namespace PapagotiTool
             {
                 try
                 {
+                    //Lấy dữ liệu từ Firebase dựa theo tên block được tạo
                     FirebaseResponse response = await client.GetAsync(nameFloor);
                     Model.FloorFb floor = response.ResultAs<Model.FloorFb>();
                     if (floor != null)
                     {
-                        Invoke(new Action(() =>
-                        {
-                            Console.WriteLine("update " +nameFloor);
-                            gbFloor.Text = "[ " +nameFloor+ " ]";
-                            txtCurrent.Text = floor.Current.ToString();
-                            txtEnergy.Text = floor.Energy.ToString();
-                            txtFrequency.Text = floor.Frequency.ToString();
-                            txtHumidity.Text = floor.Humidity.ToString();
-                            txtPower.Text = floor.Power.ToString();
-                            txtVoltage.Text = floor.Voltage.ToString();
-                            txtTime.Text = floor.Time.ToString();
-                        }));
+                        setValueUi(floor);
                     }
                     else
                     {
@@ -109,13 +127,14 @@ namespace PapagotiTool
             }
 
         }
-
+        // Dẫn đến frmDetail
         private void btnDetail_Click(object sender, EventArgs e)
         {
             frmDetailFloor frmDetailFloor = new frmDetailFloor(nameFloor,config);
             frmDetailFloor.Show();
         }
 
+        //xóa block
         private void btnRemove_Click(object sender, EventArgs e)
         {
             active = false;
