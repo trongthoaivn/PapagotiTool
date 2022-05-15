@@ -21,15 +21,15 @@ namespace PapagotiTool
 {
     public partial class frmMain : MetroSetForm
     {
-        public frmMain(String dataStr, String Auth)
+        public frmMain(String auth, string path)
         {
             InitializeComponent();
             
             //Lấy dữ liệu đăng nhập Firebase tạo config để đăng nhập
             IFirebaseConfig config = new FirebaseConfig
             {
-                AuthSecret = Auth,
-                BasePath = dataStr
+                AuthSecret = auth,
+                BasePath = path
             };
             this.config = config;
             txtCount.Text = "0";

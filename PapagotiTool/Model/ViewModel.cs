@@ -11,7 +11,7 @@ namespace PapagotiTool.Model
     internal class ViewModel
     {
 
-        public ISeries[] Series { get; set; }
+        public ISeries[] Point { get; set; }
         
 
     }

@@ -22,7 +22,6 @@ namespace PapagotiTool
             this.nameFloor = nameFloor;
             this.config = config;
             this.panel = panel;
-            this.timeWriteRecord = timeRefresh / 1000 * 3; //thời gian ghi dữ liệu 9s
             //nhận config từ frmMain request dữ liệu từ Firebase
             _=requestDataFirebaseAsync();
             //Tiến trình request dữ liệu Firebase 
@@ -36,9 +35,7 @@ namespace PapagotiTool
         private FlowLayoutPanel panel;
         private Thread thread;
         private bool active = true;
-        private int countTimeToWriteSQL = 0;
-        private int timeRefresh = 3000; // thời gian refesh dữ liệu giây*1000
-        private int timeWriteRecord = 0;
+        private int timeRefresh = Properties.Settings.Default.timeRefreshData; // thời gian refesh dữ liệu giây*1000
         private Model.dbContext dbContext = new Model.dbContext();
 
         private void theardRequest()
@@ -47,13 +44,7 @@ namespace PapagotiTool
             {
                 Thread.Sleep(timeRefresh);
                _ = requestDataFirebaseAsync();
-
-                if(countTimeToWriteSQL == timeWriteRecord)
-                {
-                    addNewRecord();  
-                    countTimeToWriteSQL=0;
-                }
-               countTimeToWriteSQL++;
+                addNewRecord();
             }
         }
 

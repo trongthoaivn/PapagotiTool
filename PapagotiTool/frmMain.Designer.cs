@@ -40,7 +40,6 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.firebaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.localDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -198,7 +197,6 @@
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.firebaseToolStripMenuItem,
             this.localDatabaseToolStripMenuItem,
-            this.reportToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
@@ -217,12 +215,6 @@
             this.localDatabaseToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.localDatabaseToolStripMenuItem.Text = "Local Database";
             this.localDatabaseToolStripMenuItem.Click += new System.EventHandler(this.localDatabaseToolStripMenuItem_Click);
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.reportToolStripMenuItem.Text = "Report";
             // 
             // exitToolStripMenuItem
             // 
@@ -290,7 +282,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem firebaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem localDatabaseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;

@@ -43,7 +43,7 @@ namespace PapagotiTool
         {
             while (active)
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(Properties.Settings.Default.timeRefreshData);
                 _ = requestDataFirebaseAsync();
 
             }

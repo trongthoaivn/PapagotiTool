@@ -99,7 +99,7 @@ namespace PapagotiTool
             Properties.Settings.Default.Save();
 
             this.Hide();
-            frmMain frmMain = new frmMain(DatabaseFirebase, AuthSecret);
+            frmMain frmMain = new frmMain(Properties.Settings.Default.PassWord, Properties.Settings.Default.UserName);
             frmMain.ShowDialog();
         }
         

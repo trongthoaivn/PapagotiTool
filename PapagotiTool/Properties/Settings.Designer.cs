@@ -118,5 +118,17 @@ namespace PapagotiTool.Properties {
                 this["fileName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3000")]
+        public int timeRefreshData {
+            get {
+                return ((int)(this["timeRefreshData"]));
+            }
+            set {
+                this["timeRefreshData"] = value;
+            }
+        }
     }
 }
