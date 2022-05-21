@@ -27,6 +27,10 @@ namespace PapagotiTool.Model
 
         public double? Voltage { get; set; }
 
+        public double? Temperature { get; set; }
+
+        public double? PF { get; set; }
+
         public DateTime? Time { get; set; }
     }
 }

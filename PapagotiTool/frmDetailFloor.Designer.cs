@@ -33,16 +33,28 @@
             CodeArtEng.Gauge.Themes.ThemeColors themeColors2 = new CodeArtEng.Gauge.Themes.ThemeColors();
             CodeArtEng.Gauge.Themes.ThemeColors themeColors3 = new CodeArtEng.Gauge.Themes.ThemeColors();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtTime = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cartesianChart1 = new LiveChartsCore.SkiaSharpView.WinForms.CartesianChart();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ggTemperature = new CodeArtEng.Gauge.CircularGauge();
             this.ggCurrent = new CodeArtEng.Gauge.CircularGauge();
             this.ggVoltage = new CodeArtEng.Gauge.CircularGauge();
             this.ggHumidity = new CodeArtEng.Gauge.CircularGauge();
             this.ggFrequency = new CodeArtEng.Gauge.CircularGauge();
             this.ggPower = new CodeArtEng.Gauge.CircularGauge();
             this.ggEnergy = new CodeArtEng.Gauge.CircularGauge();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ggPF = new CodeArtEng.Gauge.CircularGauge();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // metroSetControlBox1
@@ -71,22 +83,109 @@
             this.metroSetControlBox1.ThemeAuthor = "Narwin";
             this.metroSetControlBox1.ThemeName = "MetroLite";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // txtTime
+            // 
+            this.txtTime.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime.Location = new System.Drawing.Point(1017, 222);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.ReadOnly = true;
+            this.txtTime.Size = new System.Drawing.Size(236, 31);
+            this.txtTime.TabIndex = 3;
+            this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtTime);
-            this.panel1.Controls.Add(this.ggCurrent);
-            this.panel1.Controls.Add(this.ggVoltage);
-            this.panel1.Controls.Add(this.ggHumidity);
-            this.panel1.Controls.Add(this.ggFrequency);
-            this.panel1.Controls.Add(this.ggPower);
-            this.panel1.Controls.Add(this.ggEnergy);
+            this.panel1.Controls.Add(this.cartesianChart1);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(15, 97);
+            this.panel1.Location = new System.Drawing.Point(14, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1336, 656);
             this.panel1.TabIndex = 1;
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cartesianChart1.Location = new System.Drawing.Point(5, 261);
+            this.cartesianChart1.Margin = new System.Windows.Forms.Padding(5);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(1317, 375);
+            this.cartesianChart1.TabIndex = 37;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.ggPF);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.ggTemperature);
+            this.panel2.Controls.Add(this.ggCurrent);
+            this.panel2.Controls.Add(this.ggVoltage);
+            this.panel2.Controls.Add(this.ggHumidity);
+            this.panel2.Controls.Add(this.ggFrequency);
+            this.panel2.Controls.Add(this.ggPower);
+            this.panel2.Controls.Add(this.ggEnergy);
+            this.panel2.Location = new System.Drawing.Point(18, 18);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1304, 198);
+            this.panel2.TabIndex = 36;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PapagotiTool.Properties.Resources.search;
+            this.pictureBox2.Location = new System.Drawing.Point(270, 163);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 28);
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PapagotiTool.Properties.Resources.search;
+            this.pictureBox1.Location = new System.Drawing.Point(100, 163);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 28);
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // ggTemperature
+            // 
+            this.ggTemperature.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ggTemperature.DrawStyle = CodeArtEng.Gauge.GaugeIndicatorStyle.Segment;
+            this.ggTemperature.ErrorLimit = 101D;
+            this.ggTemperature.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggTemperature.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggTemperature.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggTemperature.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
+            this.ggTemperature.Location = new System.Drawing.Point(960, 28);
+            this.ggTemperature.Maximum = 100D;
+            this.ggTemperature.Name = "ggTemperature";
+            this.ggTemperature.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ggTemperature.ScaleFactor = 1D;
+            this.ggTemperature.Size = new System.Drawing.Size(195, 129);
+            this.ggTemperature.TabIndex = 42;
+            this.ggTemperature.Title = "Temperature";
+            this.ggTemperature.Unit = "(° C)";
+            this.ggTemperature.UserDefinedColors.Base = themeColors1;
+            themeColors2.PointerColor = System.Drawing.Color.Red;
+            this.ggTemperature.UserDefinedColors.Error = themeColors2;
+            themeColors3.PointerColor = System.Drawing.Color.Orange;
+            this.ggTemperature.UserDefinedColors.Warning = themeColors3;
+            this.ggTemperature.Value = 0D;
+            this.ggTemperature.WarningLimit = 50D;
             // 
             // ggCurrent
             // 
@@ -97,21 +196,15 @@
             this.ggCurrent.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggCurrent.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggCurrent.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggCurrent.Location = new System.Drawing.Point(51, 60);
-            this.ggCurrent.Maximum = 0.1D;
-            this.ggCurrent.Minimum = 0.001D;
+            this.ggCurrent.Location = new System.Drawing.Point(-15, 28);
+            this.ggCurrent.Maximum = 0.5D;
             this.ggCurrent.Name = "ggCurrent";
             this.ggCurrent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggCurrent.ScaleFactor = 1D;
             this.ggCurrent.Size = new System.Drawing.Size(201, 129);
-            this.ggCurrent.TabIndex = 34;
-            this.ggCurrent.Title = "Energy";
+            this.ggCurrent.TabIndex = 41;
+            this.ggCurrent.Title = "Current";
             this.ggCurrent.Unit = "(A)";
-            this.ggCurrent.UserDefinedColors.Base = themeColors1;
-            themeColors2.PointerColor = System.Drawing.Color.Red;
-            this.ggCurrent.UserDefinedColors.Error = themeColors2;
-            themeColors3.PointerColor = System.Drawing.Color.Orange;
-            this.ggCurrent.UserDefinedColors.Warning = themeColors3;
             this.ggCurrent.Value = 0D;
             this.ggCurrent.WarningLimit = 0.05D;
             // 
@@ -124,14 +217,13 @@
             this.ggVoltage.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggVoltage.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggVoltage.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggVoltage.Location = new System.Drawing.Point(1086, 60);
-            this.ggVoltage.Maximum = 0.1D;
-            this.ggVoltage.Minimum = 0.001D;
+            this.ggVoltage.Location = new System.Drawing.Point(314, 28);
+            this.ggVoltage.Maximum = 220D;
             this.ggVoltage.Name = "ggVoltage";
             this.ggVoltage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggVoltage.ScaleFactor = 1D;
-            this.ggVoltage.Size = new System.Drawing.Size(201, 129);
-            this.ggVoltage.TabIndex = 33;
+            this.ggVoltage.Size = new System.Drawing.Size(192, 129);
+            this.ggVoltage.TabIndex = 40;
             this.ggVoltage.Title = "Voltage";
             this.ggVoltage.Unit = "(V)";
             this.ggVoltage.Value = 0D;
@@ -146,14 +238,13 @@
             this.ggHumidity.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggHumidity.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggHumidity.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggHumidity.Location = new System.Drawing.Point(879, 60);
-            this.ggHumidity.Maximum = 0.1D;
-            this.ggHumidity.Minimum = 0.001D;
+            this.ggHumidity.Location = new System.Drawing.Point(476, 28);
+            this.ggHumidity.Maximum = 100D;
             this.ggHumidity.Name = "ggHumidity";
             this.ggHumidity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggHumidity.ScaleFactor = 1D;
-            this.ggHumidity.Size = new System.Drawing.Size(201, 129);
-            this.ggHumidity.TabIndex = 32;
+            this.ggHumidity.Size = new System.Drawing.Size(194, 129);
+            this.ggHumidity.TabIndex = 39;
             this.ggHumidity.Title = "Humidity";
             this.ggHumidity.Unit = "(%)";
             this.ggHumidity.Value = 0D;
@@ -168,14 +259,13 @@
             this.ggFrequency.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggFrequency.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggFrequency.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggFrequency.Location = new System.Drawing.Point(672, 60);
-            this.ggFrequency.Maximum = 0.1D;
-            this.ggFrequency.Minimum = 0.001D;
+            this.ggFrequency.Location = new System.Drawing.Point(799, 28);
+            this.ggFrequency.Maximum = 60D;
             this.ggFrequency.Name = "ggFrequency";
             this.ggFrequency.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggFrequency.ScaleFactor = 1D;
-            this.ggFrequency.Size = new System.Drawing.Size(201, 129);
-            this.ggFrequency.TabIndex = 31;
+            this.ggFrequency.Size = new System.Drawing.Size(195, 129);
+            this.ggFrequency.TabIndex = 38;
             this.ggFrequency.Title = "Frequency";
             this.ggFrequency.Unit = "(Hz)";
             this.ggFrequency.Value = 0D;
@@ -187,17 +277,16 @@
             this.ggPower.DrawStyle = CodeArtEng.Gauge.GaugeIndicatorStyle.Segment;
             this.ggPower.ErrorLimit = 1D;
             this.ggPower.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ggPower.FontTitle = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggPower.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggPower.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggPower.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggPower.Location = new System.Drawing.Point(465, 60);
-            this.ggPower.Maximum = 0.1D;
-            this.ggPower.Minimum = 0.001D;
+            this.ggPower.Location = new System.Drawing.Point(633, 28);
+            this.ggPower.Maximum = 100D;
             this.ggPower.Name = "ggPower";
             this.ggPower.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggPower.ScaleFactor = 1D;
             this.ggPower.Size = new System.Drawing.Size(201, 129);
-            this.ggPower.TabIndex = 30;
+            this.ggPower.TabIndex = 37;
             this.ggPower.Title = "Power";
             this.ggPower.Unit = "(W)";
             this.ggPower.Value = 0D;
@@ -212,35 +301,58 @@
             this.ggEnergy.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggEnergy.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ggEnergy.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
-            this.ggEnergy.Location = new System.Drawing.Point(258, 60);
-            this.ggEnergy.Maximum = 0.1D;
-            this.ggEnergy.Minimum = 0.001D;
+            this.ggEnergy.Location = new System.Drawing.Point(149, 28);
+            this.ggEnergy.Maximum = 1D;
             this.ggEnergy.Name = "ggEnergy";
             this.ggEnergy.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ggEnergy.ScaleFactor = 1D;
             this.ggEnergy.Size = new System.Drawing.Size(201, 129);
-            this.ggEnergy.TabIndex = 29;
+            this.ggEnergy.TabIndex = 36;
             this.ggEnergy.Title = "Energy";
             this.ggEnergy.Unit = "(kWh)";
             this.ggEnergy.Value = 0D;
             this.ggEnergy.WarningLimit = 0.05D;
             // 
-            // txtTime
+            // ggPF
             // 
-            this.txtTime.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime.Location = new System.Drawing.Point(1086, 12);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.ReadOnly = true;
-            this.txtTime.Size = new System.Drawing.Size(236, 31);
-            this.txtTime.TabIndex = 3;
-            this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ggPF.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ggPF.DrawStyle = CodeArtEng.Gauge.GaugeIndicatorStyle.Segment;
+            this.ggPF.ErrorLimit = 101D;
+            this.ggPF.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggPF.FontTitle = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggPF.FontUnitLabel = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ggPF.InfoMode = CodeArtEng.Gauge.GaugeInfoMode.NONE;
+            this.ggPF.Location = new System.Drawing.Point(1122, 28);
+            this.ggPF.Maximum = 100D;
+            this.ggPF.Name = "ggPF";
+            this.ggPF.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ggPF.ScaleFactor = 1D;
+            this.ggPF.Size = new System.Drawing.Size(197, 129);
+            this.ggPF.TabIndex = 45;
+            this.ggPF.Title = "PF";
+            this.ggPF.Unit = "()";
+            this.ggPF.Value = 0D;
+            this.ggPF.WarningLimit = 50D;
             // 
-            // timer1
+            // pictureBox3
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pictureBox3.Image = global::PapagotiTool.Properties.Resources.search;
+            this.pictureBox3.Location = new System.Drawing.Point(434, 163);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 28);
+            this.pictureBox3.TabIndex = 46;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(87, 224);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 31);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Chart Name : ";
             // 
             // frmDetailFloor
             // 
@@ -261,6 +373,10 @@
             this.Load += new System.EventHandler(this.frmDetailFloor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,14 +384,22 @@
         #endregion
 
         private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
-        private System.Windows.Forms.Panel panel1;
-        private CodeArtEng.Gauge.CircularGauge ggEnergy;
-        private CodeArtEng.Gauge.CircularGauge ggPower;
-        private CodeArtEng.Gauge.CircularGauge ggFrequency;
-        private CodeArtEng.Gauge.CircularGauge ggHumidity;
-        private CodeArtEng.Gauge.CircularGauge ggVoltage;
-        private CodeArtEng.Gauge.CircularGauge ggCurrent;
-        private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private CodeArtEng.Gauge.CircularGauge ggTemperature;
+        private CodeArtEng.Gauge.CircularGauge ggCurrent;
+        private CodeArtEng.Gauge.CircularGauge ggVoltage;
+        private CodeArtEng.Gauge.CircularGauge ggHumidity;
+        private CodeArtEng.Gauge.CircularGauge ggFrequency;
+        private CodeArtEng.Gauge.CircularGauge ggPower;
+        private CodeArtEng.Gauge.CircularGauge ggEnergy;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private LiveChartsCore.SkiaSharpView.WinForms.CartesianChart cartesianChart1;
+        private CodeArtEng.Gauge.CircularGauge ggPF;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }

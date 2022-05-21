@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Collections.ObjectModel;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FireSharp;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using LiveChartsCore.SkiaSharpView;
 using MetroSet_UI.Forms;
 
 namespace PapagotiTool
 {
     public partial class frmDetailFloor : MetroSetForm
     {
-        public frmDetailFloor(String nameFloor , IFirebaseConfig config)
+        public frmDetailFloor(String nameFloor , IFirebaseConfig config )
         {
         
 
@@ -38,6 +34,23 @@ namespace PapagotiTool
         private Thread thread;
         private bool active = true;
         private System.Timers.Timer timer;
+        private int mode = 1;
+        private ObservableCollection<double> ObsList = new ObservableCollection<double>();
+
+        private void addPoint(Model.FloorFb floor)
+        {
+            ObsList.Add(0);
+            if(ObsList.Count > 20)
+            {
+                ObsList.RemoveAt(0);
+            }
+            if(mode == 1)
+                ObsList.Add((double)floor.Current);
+            else if( mode == 2)
+                ObsList.Add((double)floor.Energy);
+            else if(mode == 3)
+                ObsList.Add((double)floor.Voltage);
+        }
 
         private void theardRequest()
         {
@@ -53,13 +66,15 @@ namespace PapagotiTool
         {
             Invoke(new Action(() =>
             {
-                Console.WriteLine("+1");
                 ggCurrent.Value = (double)floor.Current;
                 ggEnergy.Value = (double)floor.Energy;
                 ggFrequency.Value = (double)floor.Frequency;
                 ggHumidity.Value = (double)floor.Humidity;
                 ggPower.Value = (double)floor.Power;
                 ggVoltage.Value = (double)floor.Voltage;
+                ggTemperature.Value = (double)floor.Temperature;
+                ggPF.Value = (double)floor.PF;
+                addPoint(floor);
             }));
         }
 
@@ -73,13 +88,15 @@ namespace PapagotiTool
                 {
                     FirebaseResponse response = await client.GetAsync(nameFloor);
                     Model.FloorFb floor = response.ResultAs<Model.FloorFb>();
-                    if (floor != null)
+                    if (floor != null )
                     {
                         setValueUi(floor);
                     }
                 }
                 catch (Exception ex)
                 {
+                    active = false;
+                    thread.Abort();
                     MessageBox.Show("Floor error :" + ex.Message);
                 }
 
@@ -105,7 +122,15 @@ namespace PapagotiTool
             timer.Interval = 1000;
             timer.Elapsed += Timer_Elapsed;
             timer.Start();
-            
+            label1.Text = "Chart Name : Current";
+            var line = new LiveChartsCore.ISeries[]
+            {
+               new LineSeries<double>()
+               {
+                   Values = ObsList
+               }
+            };
+           cartesianChart1.Series = line;
         }
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -114,6 +139,27 @@ namespace PapagotiTool
             {
                 txtTime.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
             }));
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ObsList.Clear();
+            label1.Text = "Chart Name : Current";
+            mode = 1;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ObsList.Clear();
+            label1.Text = "Chart Name : Energy";
+            mode = 2;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ObsList.Clear();
+            label1.Text = "Chart Name : Voltage";
+            mode = 3;
         }
     }
 }

@@ -48,8 +48,8 @@ namespace PapagotiTool
         //Test
         private IFirebaseClient client;
         private Random random = new Random();
-        
-        
+        private int timeRefresh = Properties.Settings.Default.timeRefreshData;
+
         //Test
         //Tạo dữ liệu random
         public double GetRandomNumber(double minimum, double maximum)
@@ -63,15 +63,16 @@ namespace PapagotiTool
         {
             while (active)
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(timeRefresh);
                 Model.FloorFb floor = new Model.FloorFb();
-                floor.Current = GetRandomNumber(0.001, 0.1);
-                floor.Energy = GetRandomNumber(0.001, 0.1);
-                floor.Power = GetRandomNumber(0.001, 0.1);
-                floor.Frequency = GetRandomNumber(0.001, 0.1);
-                floor.Humidity = GetRandomNumber(0.001, 0.1);
-                floor.Voltage = GetRandomNumber(0.001, 0.1);
-                floor.Time = DateTime.Now;
+                floor.Current = GetRandomNumber(0, 10);
+                floor.Energy = GetRandomNumber(0, 10);
+                floor.Power = GetRandomNumber(0, 10);
+                floor.Frequency = GetRandomNumber(0, 10);
+                floor.Humidity = GetRandomNumber(0, 100);
+                floor.Voltage = GetRandomNumber(0, 220);
+                floor.Temperature = GetRandomNumber(0, 100);
+                floor.PF = GetRandomNumber(1,10);
                 FirebaseResponse response = await client.UpdateAsync("floor1", floor);
                 var data = response.ResultAs<Model.FloorFb>();
                // Console.WriteLine("Post new value !" );

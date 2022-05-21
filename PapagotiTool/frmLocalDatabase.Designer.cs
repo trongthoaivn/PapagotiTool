@@ -30,6 +30,7 @@
         {
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbCount = new System.Windows.Forms.Label();
             this.lbTo = new System.Windows.Forms.Label();
             this.lbForm = new System.Windows.Forms.Label();
             this.lbChartName = new System.Windows.Forms.Label();
@@ -50,12 +51,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.backgroundWorkerExport = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorkerGetData = new System.ComponentModel.BackgroundWorker();
-            this.lbCount = new System.Windows.Forms.Label();
-            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -87,6 +87,7 @@
             this.metroSetControlBox1.Text = "metroSetControlBox1";
             this.metroSetControlBox1.ThemeAuthor = "Narwin";
             this.metroSetControlBox1.ThemeName = "MetroLite";
+           
             // 
             // panel1
             // 
@@ -105,6 +106,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1249, 581);
             this.panel1.TabIndex = 1;
+            // 
+            // lbCount
+            // 
+            this.lbCount.AutoSize = true;
+            this.lbCount.Location = new System.Drawing.Point(719, 18);
+            this.lbCount.Name = "lbCount";
+            this.lbCount.Size = new System.Drawing.Size(110, 23);
+            this.lbCount.TabIndex = 7;
+            this.lbCount.Text = "Point Count :";
             // 
             // lbTo
             // 
@@ -311,6 +321,13 @@
             this.loginToolStripMenuItem.Text = "Login Database";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
+            // exportToolStripMenuItem
+            // 
+            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
+            this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,22 +352,6 @@
             this.backgroundWorkerGetData.WorkerReportsProgress = true;
             this.backgroundWorkerGetData.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerGetData_DoWork);
             this.backgroundWorkerGetData.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerGetData_RunWorkerCompleted);
-            // 
-            // lbCount
-            // 
-            this.lbCount.AutoSize = true;
-            this.lbCount.Location = new System.Drawing.Point(719, 18);
-            this.lbCount.Name = "lbCount";
-            this.lbCount.Size = new System.Drawing.Size(110, 23);
-            this.lbCount.TabIndex = 7;
-            this.lbCount.Text = "Point Count :";
-            // 
-            // exportToolStripMenuItem
-            // 
-            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.exportToolStripMenuItem.Text = "Export";
-            this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // frmLocalDatabase
             // 

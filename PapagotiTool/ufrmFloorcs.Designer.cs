@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.gbFloor = new System.Windows.Forms.GroupBox();
+            this.txtPF = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnRemove = new ReaLTaiizor.Controls.MetroButton();
             this.btnDetail = new ReaLTaiizor.Controls.MetroButton();
-            this.txtTime = new System.Windows.Forms.TextBox();
+            this.txtTemperature = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtVoltage = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,9 +52,11 @@
             // 
             // gbFloor
             // 
+            this.gbFloor.Controls.Add(this.txtPF);
+            this.gbFloor.Controls.Add(this.label8);
             this.gbFloor.Controls.Add(this.btnRemove);
             this.gbFloor.Controls.Add(this.btnDetail);
-            this.gbFloor.Controls.Add(this.txtTime);
+            this.gbFloor.Controls.Add(this.txtTemperature);
             this.gbFloor.Controls.Add(this.label7);
             this.gbFloor.Controls.Add(this.txtVoltage);
             this.gbFloor.Controls.Add(this.label6);
@@ -71,10 +75,31 @@
             this.gbFloor.Margin = new System.Windows.Forms.Padding(4);
             this.gbFloor.Name = "gbFloor";
             this.gbFloor.Padding = new System.Windows.Forms.Padding(4);
-            this.gbFloor.Size = new System.Drawing.Size(356, 355);
+            this.gbFloor.Size = new System.Drawing.Size(356, 390);
             this.gbFloor.TabIndex = 0;
             this.gbFloor.TabStop = false;
             this.gbFloor.Text = "FloorName";
+            // 
+            // txtPF
+            // 
+            this.txtPF.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPF.Location = new System.Drawing.Point(200, 300);
+            this.txtPF.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPF.Name = "txtPF";
+            this.txtPF.ReadOnly = true;
+            this.txtPF.Size = new System.Drawing.Size(119, 23);
+            this.txtPF.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(28, 301);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 23);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "PF :";
             // 
             // btnRemove
             // 
@@ -85,7 +110,7 @@
             this.btnRemove.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btnRemove.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btnRemove.HoverTextColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(39, 306);
+            this.btnRemove.Location = new System.Drawing.Point(39, 340);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.MetroStyleManager = null;
             this.btnRemove.Name = "btnRemove";
@@ -112,7 +137,7 @@
             this.btnDetail.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btnDetail.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btnDetail.HoverTextColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(186, 306);
+            this.btnDetail.Location = new System.Drawing.Point(186, 340);
             this.btnDetail.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetail.MetroStyleManager = null;
             this.btnDetail.Name = "btnDetail";
@@ -130,16 +155,16 @@
             this.btnDetail.ThemeName = "MetroLite";
             this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
-            // txtTime
+            // txtTemperature
             // 
-            this.txtTime.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTime.Location = new System.Drawing.Point(165, 265);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.ReadOnly = true;
-            this.txtTime.Size = new System.Drawing.Size(145, 23);
-            this.txtTime.TabIndex = 13;
+            this.txtTemperature.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTemperature.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTemperature.Location = new System.Drawing.Point(201, 265);
+            this.txtTemperature.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTemperature.Name = "txtTemperature";
+            this.txtTemperature.ReadOnly = true;
+            this.txtTemperature.Size = new System.Drawing.Size(119, 23);
+            this.txtTemperature.TabIndex = 13;
             // 
             // label7
             // 
@@ -147,19 +172,19 @@
             this.label7.Location = new System.Drawing.Point(28, 266);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 23);
+            this.label7.Size = new System.Drawing.Size(152, 23);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Time :";
+            this.label7.Text = "Temperature (° C) :";
             // 
             // txtVoltage
             // 
             this.txtVoltage.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtVoltage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtVoltage.Location = new System.Drawing.Point(165, 225);
+            this.txtVoltage.Location = new System.Drawing.Point(201, 225);
             this.txtVoltage.Margin = new System.Windows.Forms.Padding(4);
             this.txtVoltage.Name = "txtVoltage";
             this.txtVoltage.ReadOnly = true;
-            this.txtVoltage.Size = new System.Drawing.Size(155, 23);
+            this.txtVoltage.Size = new System.Drawing.Size(119, 23);
             this.txtVoltage.TabIndex = 11;
             // 
             // label6
@@ -176,11 +201,11 @@
             // 
             this.txtPower.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPower.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPower.Location = new System.Drawing.Point(165, 187);
+            this.txtPower.Location = new System.Drawing.Point(201, 187);
             this.txtPower.Margin = new System.Windows.Forms.Padding(4);
             this.txtPower.Name = "txtPower";
             this.txtPower.ReadOnly = true;
-            this.txtPower.Size = new System.Drawing.Size(155, 23);
+            this.txtPower.Size = new System.Drawing.Size(119, 23);
             this.txtPower.TabIndex = 9;
             // 
             // label5
@@ -197,11 +222,11 @@
             // 
             this.txtHumidity.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtHumidity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHumidity.Location = new System.Drawing.Point(165, 148);
+            this.txtHumidity.Location = new System.Drawing.Point(201, 148);
             this.txtHumidity.Margin = new System.Windows.Forms.Padding(4);
             this.txtHumidity.Name = "txtHumidity";
             this.txtHumidity.ReadOnly = true;
-            this.txtHumidity.Size = new System.Drawing.Size(155, 23);
+            this.txtHumidity.Size = new System.Drawing.Size(119, 23);
             this.txtHumidity.TabIndex = 7;
             // 
             // label4
@@ -210,19 +235,19 @@
             this.label4.Location = new System.Drawing.Point(28, 149);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 23);
+            this.label4.Size = new System.Drawing.Size(117, 23);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Humidity :";
+            this.label4.Text = "Humidity (%) :";
             // 
             // txtFrequency
             // 
             this.txtFrequency.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtFrequency.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFrequency.Location = new System.Drawing.Point(165, 109);
+            this.txtFrequency.Location = new System.Drawing.Point(201, 109);
             this.txtFrequency.Margin = new System.Windows.Forms.Padding(4);
             this.txtFrequency.Name = "txtFrequency";
             this.txtFrequency.ReadOnly = true;
-            this.txtFrequency.Size = new System.Drawing.Size(155, 23);
+            this.txtFrequency.Size = new System.Drawing.Size(119, 23);
             this.txtFrequency.TabIndex = 5;
             // 
             // label3
@@ -239,11 +264,11 @@
             // 
             this.txtEnergy.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtEnergy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEnergy.Location = new System.Drawing.Point(165, 69);
+            this.txtEnergy.Location = new System.Drawing.Point(201, 69);
             this.txtEnergy.Margin = new System.Windows.Forms.Padding(4);
             this.txtEnergy.Name = "txtEnergy";
             this.txtEnergy.ReadOnly = true;
-            this.txtEnergy.Size = new System.Drawing.Size(155, 23);
+            this.txtEnergy.Size = new System.Drawing.Size(119, 23);
             this.txtEnergy.TabIndex = 3;
             // 
             // label2
@@ -260,11 +285,11 @@
             // 
             this.txtCurrent.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtCurrent.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCurrent.Location = new System.Drawing.Point(165, 31);
+            this.txtCurrent.Location = new System.Drawing.Point(201, 31);
             this.txtCurrent.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurrent.Name = "txtCurrent";
             this.txtCurrent.ReadOnly = true;
-            this.txtCurrent.Size = new System.Drawing.Size(155, 23);
+            this.txtCurrent.Size = new System.Drawing.Size(119, 23);
             this.txtCurrent.TabIndex = 1;
             // 
             // label1
@@ -286,7 +311,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ufrmFloorcs";
-            this.Size = new System.Drawing.Size(390, 386);
+            this.Size = new System.Drawing.Size(390, 421);
             this.gbFloor.ResumeLayout(false);
             this.gbFloor.PerformLayout();
             this.ResumeLayout(false);
@@ -308,9 +333,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtVoltage;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.TextBox txtTemperature;
         private System.Windows.Forms.Label label7;
         private ReaLTaiizor.Controls.MetroButton btnDetail;
         private ReaLTaiizor.Controls.MetroButton btnRemove;
+        private System.Windows.Forms.TextBox txtPF;
+        private System.Windows.Forms.Label label8;
     }
 }

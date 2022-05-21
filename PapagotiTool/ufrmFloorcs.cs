@@ -2,12 +2,6 @@
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,7 +55,9 @@ namespace PapagotiTool
                 record.Humidity = Double.Parse(txtHumidity.Text);
                 record.Energy = Double.Parse(txtEnergy.Text);
                 record.Voltage = Double.Parse(txtVoltage.Text);
-                record.Time = DateTime.Parse(txtTime.Text);
+                record.Temperature = Double.Parse(txtTemperature.Text);
+                record.PF = Double.Parse(txtPF.Text);
+                record.Time = DateTime.Now;
                 dbContext.Floors.Add(record);
                 dbContext.SaveChanges();
             }
@@ -81,7 +77,8 @@ namespace PapagotiTool
                 txtHumidity.Text = floor.Humidity.ToString();
                 txtPower.Text = floor.Power.ToString();
                 txtVoltage.Text = floor.Voltage.ToString();
-                txtTime.Text = floor.Time.ToString();
+                txtTemperature.Text = floor.Temperature.ToString();
+                txtPF.Text = floor.PF.ToString();
             }));
         }
         
@@ -112,6 +109,8 @@ namespace PapagotiTool
                 }
                 catch (Exception ex)
                 {
+                    active = false;
+                    this.thread.Abort();
                     MessageBox.Show("Floor error "+ ex.Message);
                 }
                 
@@ -132,5 +131,7 @@ namespace PapagotiTool
             this.thread.Abort();
             panel.Controls.Remove(this);
         }
+
+
     }
 }

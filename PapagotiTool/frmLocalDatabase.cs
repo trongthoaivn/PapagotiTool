@@ -2,20 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using LiveChartsCore;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroSet_UI.Forms;
-using LiveChartsCore.SkiaSharpView.WinForms;
 using LiveChartsCore.SkiaSharpView;
 using System.Threading;
 using Microsoft.Office.Interop.Excel;
 using System.Globalization;
-using LiveChartsCore;
 using LiveChartsCore.Kernel;
+
 
 namespace PapagotiTool
 {
@@ -118,22 +113,28 @@ namespace PapagotiTool
         {
             var index = e.ColumnIndex;
             chart.Series = null;
-            if (index !=0 && index !=1 && index != 8) {
-                lbChartName.Text = "Chart Name : "+ gvData.Columns[index].Name;
-                lbForm.Text = "Form : " + dbFrom.Text + " " + timeFrom.Text;
-                lbTo.Text = "To : " + dbTo.Text + " " + timeTo.Text;
-                List<Detail> list = new List<Detail>();
-                foreach (DataGridViewRow item in gvData.Rows)
+            if (index !=0 && index !=1 && index != 10) {
+                try 
                 {
-                    list.Add( new Detail {
-                            Value = Double.Parse(item.Cells[index].Value.ToString()),
-                            Id = int.Parse(item.Cells[0].Value.ToString())
-                         });
-                }
+                    lbChartName.Text = "Chart Name : " + gvData.Columns[index].Name;
+                    lbForm.Text = "Form : " + dbFrom.Text + " " + timeFrom.Text;
+                    lbTo.Text = "To : " + dbTo.Text + " " + timeTo.Text;
+                    List<Detail> list = new List<Detail>();
+                    foreach (DataGridViewRow item in gvData.Rows)
+                    {
+                        if(item.Cells[index].Value != null)
+                        {
+                            list.Add(new Detail
+                            {
+                                Value = Double.Parse(item.Cells[index].Value.ToString()),
+                                Id = int.Parse(item.Cells[0].Value.ToString())
+                            });
+                        } 
+                    }
 
-                lbCount.Text = "Point Count : "+list.Count;
-                var detailSeries = new LiveChartsCore.ISeries[]
-                {
+                    lbCount.Text = "Point Count : " + list.Count;
+                    var detailSeries = new LiveChartsCore.ISeries[]
+                    {
                     new LineSeries<Detail>
                     {
                         Values = list,
@@ -145,8 +146,14 @@ namespace PapagotiTool
                         },
                         TooltipLabelFormatter = point => $"Value : {point.PrimaryValue}, ID: {point.TertiaryValue}  "
                     }
-                };
-                chart.Series = detailSeries;
+                    };
+                    chart.Series = detailSeries;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
         }
 
@@ -175,39 +182,50 @@ namespace PapagotiTool
             List<Model.Floor> list =((DataParameter)e.Argument).floorsList;
             if(list != null)
             {
-                string fileName = ((DataParameter)e.Argument).fileName;
-                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-                Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet); ;
-                Worksheet ws = (Worksheet)excel.ActiveSheet;
-                int index = 1;
-                int process = list.Count;
-                ws.Cells[1, 1] = "ID";
-                ws.Cells[1, 2] = "FloorName";
-                ws.Cells[1, 3] = "Time";
-                ws.Cells[1, 4] = "Power";
-                ws.Cells[1, 5] = "Frequency";
-                ws.Cells[1, 6] = "Current";
-                ws.Cells[1, 7] = "Humidity";
-                ws.Cells[1, 8] = "Voltage";
-                ws.Cells[1, 9] = "Energy";
-                foreach (Model.Floor floor in list)
+                try
                 {
-                    if (!backgroundWorkerExport.CancellationPending)
+                    string fileName = ((DataParameter)e.Argument).fileName;
+                    Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+                    Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet); ;
+                    Worksheet ws = (Worksheet)excel.ActiveSheet;
+                    int index = 1;
+                    int process = list.Count;
+                    ws.Cells[1, 1] = "ID";
+                    ws.Cells[1, 2] = "FloorName";
+                    ws.Cells[1, 3] = "Time";
+                    ws.Cells[1, 4] = "Power";
+                    ws.Cells[1, 5] = "Frequency";
+                    ws.Cells[1, 6] = "Current";
+                    ws.Cells[1, 7] = "Humidity";
+                    ws.Cells[1, 8] = "Voltage";
+                    ws.Cells[1, 9] = "Energy";
+                    ws.Cells[1, 10] = "Temperature";
+                    ws.Cells[1, 11] = "PF";
+                    foreach (Model.Floor floor in list)
                     {
-                        backgroundWorkerExport.ReportProgress(index++ * 100 / process);
-                        ws.Cells[index, 1] = floor.ID;
-                        ws.Cells[index, 2] = floor.FloorName;
-                        ws.Cells[index, 3] = floor.Time;
-                        ws.Cells[index, 4] = floor.Power;
-                        ws.Cells[index, 5] = floor.Frequency;
-                        ws.Cells[index, 6] = floor.Current;
-                        ws.Cells[index, 7] = floor.Humidity;
-                        ws.Cells[index, 8] = floor.Voltage;
-                        ws.Cells[index, 9] = floor.Energy;
+                        if (!backgroundWorkerExport.CancellationPending)
+                        {
+                            backgroundWorkerExport.ReportProgress(index++ * 100 / process);
+                            ws.Cells[index, 1] = floor.ID;
+                            ws.Cells[index, 2] = floor.FloorName;
+                            ws.Cells[index, 3] = floor.Time;
+                            ws.Cells[index, 4] = floor.Power;
+                            ws.Cells[index, 5] = floor.Frequency;
+                            ws.Cells[index, 6] = floor.Current;
+                            ws.Cells[index, 7] = floor.Humidity;
+                            ws.Cells[index, 8] = floor.Voltage;
+                            ws.Cells[index, 9] = floor.Energy;
+                            ws.Cells[index, 10] = floor.Temperature;
+                            ws.Cells[index, 11] = floor.PF;
+                        }
                     }
+                    ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, false, false, Type.Missing, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing, Type.Missing);
+                    excel.Quit();
                 }
-                ws.SaveAs(fileName, XlFileFormat.xlWorkbookDefault, Type.Missing, Type.Missing, false, false, Type.Missing, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing, Type.Missing);
-                excel.Quit();
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             else
             {
@@ -246,5 +264,7 @@ namespace PapagotiTool
             gvData.ClearSelection();
             gvData.Rows[point.Context.Index].Selected = true; 
         }
+
+
     }
 }
