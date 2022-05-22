@@ -123,5 +123,11 @@ namespace PapagotiTool
         {
             Process.Start("https://firebase.google.com/");
         }
+
+        private void settingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSetting1 settings = new frmSetting1();
+            settings.ShowDialog();
+        }
     }
 }

@@ -8,6 +8,7 @@ using FireSharp.Interfaces;
 using FireSharp.Response;
 using LiveChartsCore.SkiaSharpView;
 using MetroSet_UI.Forms;
+using Microsoft.Toolkit.Uwp.Notifications;
 
 namespace PapagotiTool
 {
@@ -104,6 +105,34 @@ namespace PapagotiTool
 
         }
 
+        private void settingGauge()
+        {
+            ggCurrent.Maximum = Properties.Settings.Default.CurrentMax;
+            ggCurrent.Minimum = Properties.Settings.Default.CurrentMin;
+            ggCurrent.WarningLimit = Properties.Settings.Default.CurrentAlert;
+            ggEnergy.Maximum = Properties.Settings.Default.EnergyMax;
+            ggEnergy.Minimum = Properties.Settings.Default.EnergyMin;
+            ggEnergy.WarningLimit = Properties.Settings.Default.EnergyAlert;
+            ggVoltage.Maximum = Properties.Settings.Default.VoltageMax;
+            ggVoltage.Minimum = Properties.Settings.Default.VoltageMin;
+            ggVoltage.WarningLimit = Properties.Settings.Default.VoltageAlert;
+            ggHumidity.Maximum = Properties.Settings.Default.HumidityMax;
+            ggHumidity.Minimum = Properties.Settings.Default.HumidityMin;
+            ggHumidity.WarningLimit = Properties.Settings.Default.HumidityAlert;
+            ggPower.Minimum = Properties.Settings.Default.PowerMin;
+            ggPower.Maximum = Properties.Settings.Default.PowerMax;
+            ggPower.WarningLimit = Properties.Settings.Default.PowerAlert;
+            ggFrequency.Maximum = Properties.Settings.Default.FrequencyMax;
+            ggFrequency.Minimum = Properties.Settings.Default.FrequencyMin;
+            ggFrequency.WarningLimit = Properties.Settings.Default.FrequencyAlert;
+            ggTemperature.Maximum = Properties.Settings.Default.TemperatureMax;
+            ggTemperature.Minimum = Properties.Settings.Default.TemperatureMin;
+            ggTemperature.WarningLimit = Properties.Settings.Default.TemperatureAlert;
+            ggPF.Maximum = Properties.Settings.Default.PFMax;
+            ggPF.Minimum = Properties.Settings.Default.PFMin;
+            ggPF.WarningLimit = Properties.Settings.Default.PFAlert;
+        }
+
         private void frmDetailFloor_FormClosing(object sender, FormClosingEventArgs e)
         {
             active = false;
@@ -131,6 +160,7 @@ namespace PapagotiTool
                }
             };
            cartesianChart1.Series = line;
+            settingGauge();
         }
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -160,6 +190,62 @@ namespace PapagotiTool
             ObsList.Clear();
             label1.Text = "Chart Name : Voltage";
             mode = 3;
+        }
+
+        private void ggCurrent_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Current : " + control.Value + " (A)");
+            msg.Show();
+        }
+
+        private void ggEnergy_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Energy : " + control.Value + " (kWh)");
+            msg.Show();
+        }
+
+        private void ggVoltage_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Voltage : " + control.Value + " (V)");
+            msg.Show();
+        }
+
+        private void ggHumidity_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Humidity : " + control.Value + " (%)");
+            msg.Show();
+        }
+
+        private void ggPower_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Power : " + control.Value + " (W)");
+            msg.Show();
+        }
+
+        private void ggFrequency_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Frequency : " + control.Value + " (Hz)");
+            msg.Show();
+        }
+
+        private void ggTemperature_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning Temperature : " + control.Value + " (° C)");
+            msg.Show();
+        }
+
+        private void ggPF_WarningLimitReached(object sender, EventArgs e)
+        {
+            var control = (CodeArtEng.Gauge.CircularGauge)sender;
+            var msg = new ToastContentBuilder().AddText("Warning PF : " + control.Value + " ()");
+            msg.Show();
         }
     }
 }

@@ -205,21 +205,21 @@
             // firebaseToolStripMenuItem
             // 
             this.firebaseToolStripMenuItem.Name = "firebaseToolStripMenuItem";
-            this.firebaseToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.firebaseToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
             this.firebaseToolStripMenuItem.Text = "Firebase";
             this.firebaseToolStripMenuItem.Click += new System.EventHandler(this.firebaseToolStripMenuItem_Click);
             // 
             // localDatabaseToolStripMenuItem
             // 
             this.localDatabaseToolStripMenuItem.Name = "localDatabaseToolStripMenuItem";
-            this.localDatabaseToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.localDatabaseToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
             this.localDatabaseToolStripMenuItem.Text = "Local Database";
             this.localDatabaseToolStripMenuItem.Click += new System.EventHandler(this.localDatabaseToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(209, 28);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -228,6 +228,7 @@
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
             this.settingToolStripMenuItem.Text = "Setting";
+            this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
